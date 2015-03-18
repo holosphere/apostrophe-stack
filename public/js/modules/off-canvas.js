@@ -1,7 +1,7 @@
 $(function(){
 	var $body = $('body');
 	var $trigger = $('.off-canvas-trigger');
-	var $close = $('.demo-nav-close');
+	var $close = $('.site-nav-close');
 
 	$trigger.on('click', function() {
 		$body.toggleClass('show-off-canvas');

@@ -12,7 +12,7 @@
 
 {%- macro renderBlogListing(piece) -%}
   {% set image = aposAreaImage(piece, 'image') %}
-  <li class="column width-100 demo-blog-listing">
+  <li class="column width-100 site-blog-listing">
     <div class="column width-33 blog-listing-image">
       <div class="blog-card-head" {% if image %}style="background-image:url({{ aposFilePath(image, { size: 'one-half' }) }})"{% endif %}>
         {%- if image -%}
@@ -34,7 +34,7 @@
 
 {%- macro blogCard(piece) -%}
   <div class="column width-30">
-    <div class="demo-blog-card">
+    <div class="site-blog-card">
       <div class="blog-card-head">
         {{ aposSingleton(piece, 'image', 'slideshow', { limit: 1, aspectRatio: [324, 162], noHeight: true, edit: false, size: 'one-third' }) }}
         <div class="blog-card-title-container">

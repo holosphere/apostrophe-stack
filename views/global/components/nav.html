@@ -1,10 +1,10 @@
 {% macro nav(page, options) %}
-	<nav class="demo-nav{% if options.classes%} {{options.classes}}{% endif%}">
+	<nav class="site-nav{% if options.classes%} {{options.classes}}{% endif%}">
 		{% if options.logo %}
-			<div class="demo-nav-logo">
-				<img class="demo-apos-lockup" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe">
+			<div class="site-nav-logo">
+				<img class="site-apos-lockup" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe">
 			</div>
-			<a href="#" class="demo-nav-close">
+			<a href="#" class="site-nav-close">
 				<i class="icon icon-remove"></i>
 			</a>
 		{% endif %}

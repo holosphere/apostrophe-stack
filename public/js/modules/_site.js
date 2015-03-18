@@ -1,4 +1,4 @@
 $(function() {
-  require('./demo-header.js');
+  require('./site-header.js');
   require('./off-canvas.js');
 });

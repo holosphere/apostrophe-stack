@@ -1,5 +1,5 @@
 $(function(){
-	var $header = $('.demo-header');
+	var $header = $('.site-header');
 	var $body = $('body');
 	var $window = $(window);
 

@@ -9,8 +9,8 @@
 {% block main %}
   <div class="block content">
     <div class="inner">
-      <div class="demo-pageheader">
-        <img class="demo-apos-lockup pageheader-logo" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe">
+      <div class="site-pageheader">
+        <img class="site-apos-lockup pageheader-logo" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe">
         {{ aposArea(page, 'homepageText', {
           textOnly: true,
           styles: [
@@ -20,9 +20,9 @@
         }) }}
       </div>
     </div>
-    <div class="demo-workspaces-marquee"></div>
+    <div class="site-workspaces-marquee"></div>
     <div class="block content--bottom">
-      <div class="inner demo-pageheader">
+      <div class="inner site-pageheader">
         {{ aposArea(page, 'main', {
           controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'slideshow', 'video'],
           styles: [
@@ -43,7 +43,7 @@
   </div>
 
   <div class="block content--bottom">
-    <div class="inner demo-pageheader">
+    <div class="inner site-pageheader">
       {{ aposArea(page, 'mainBottom', {
         controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'slideshow', 'video'],
         styles: [

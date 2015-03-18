@@ -8,7 +8,7 @@
 {% macro renderPager(options, url) %}
   {% if ((options.page > 1) or (options.total > 1)) %}
 
-    <div class="demo-pager">
+    <div class="site-pager">
       {% if pager.page != 1 %}
         <a  class="pager-arrow pager-prev" data-page="{{ page -1 }}" href="{{ url | build(query, { page: pager.page -1 }) }}">Previous</a>
       {% endif %}
