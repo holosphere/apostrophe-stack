@@ -1,6 +1,5 @@
 {% include 'pageMacros.html' %}
 {% include 'components/_index.html' %}
-{% include 'svg/_index.html' %}
 
 {# This serves as our base template; it is rendered inside of the 'apos-refreshable' class in outerLayout.html. #}
 {# This is where we declare the main blocks that our layout is composed of, e.g. header, main, footer, etc. #}
@@ -28,12 +27,7 @@
             <p>This site uses cookies.</p>
           </div>
           {{ nav(page, {classes: 'hide-mobile'}) }}
-          <a href="#" class="off-canvas-trigger hide-desktop">
-            <svg class="a-toolbox">
-              <use xlink:href="#a-toolbox" />
-            </svg>
-          </a>
-
+          <a href="#" class="off-canvas-trigger hide-desktop"><i class="fa fa-bars"></i></a>
         </header>
       {% block headerContent %}
       {% endblock %}
@@ -55,9 +49,7 @@
 {% block extraContent %}
 {% endblock %}
 
-{# notice that this footer uses global areas: if we want editable content to appear #}
-{# on every page that inherits this one we want to use the global object instead of #}
-{# the page object. #}
+{# global footer #}
 
 {% block footer %}
   <footer class="block footer">
@@ -65,11 +57,6 @@
       {% block footerContent %}
         <div class="inline-middle width-50">
           Apostrophe is led by <a href="http://punkave.com">P'unk Avenue</a> in Philadelphia, PA.
-        </div>{#
-      #}<div class="inline-middle width-50 align-right">
-          <a class="inline-top footer-logo" href="http://punkave.com">
-            <img src="/images/demo_logo_punk.png" class="" alt="P'unk Avenue" width="150" height="32" />
-          </a>
         </div>
       {% endblock %}
     </div>
