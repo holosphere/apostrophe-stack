@@ -11,7 +11,7 @@ site.init({
   hostName: 'holosphere-site',
   title: 'holosphere.org',
   sessionSecret: 'h0l0sph3r3 s3ss10n s3cr3t.',
-  adminPassword: 'L3tm31nn0w!',
+  adminPassword: 'C3ns0r3d',
 
   // Force a2 to prefix all of its URLs. It still
   // listens on its own port, but you can configure
