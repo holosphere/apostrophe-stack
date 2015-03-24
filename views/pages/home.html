@@ -8,6 +8,11 @@
 
 {% block main %}
   <div class="block content">
+		{# fullscreen background area #}
+		<div class="full-background">
+			{{ aposSingleton(page, 'background', 'slideshow', { limit: 1, size: 'fullhd' } ) }}
+		</div>
+
     <div class="inner">
       <div class="site-pageheader">
         {{ aposArea(page, 'main', {
@@ -21,8 +26,6 @@
         }) }}
       </div>
     </div>
-    {# fullscreen background area #}
-  	{{ aposSingleton(page, 'background', 'slideshow') }}
   </div>
 
   <!-- 
