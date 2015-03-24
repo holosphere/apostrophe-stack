@@ -1,4 +1,4 @@
 {
-"ignore": ["public/css/*.less", "public/js/_site-compiled.js", "locales"],
+"ignore": ["public/css/master-*", "public/js/_site-compiled.js", "locales"],
 "ext": "js json html less"
 }

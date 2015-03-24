@@ -20,22 +20,12 @@
 
 {% block header %}
   <div class="block top">
-      <div class="inner site-inner">
-        <header>
-          <div class="site-header bg-red">
-            <h5>{% block headerMessage %}Cookie warning{% endblock %}</h5>
-            <p>This site uses cookies.</p>
-          </div>
-          {{ nav(page, {classes: 'hide-mobile'}) }}
-          <a href="#" class="off-canvas-trigger hide-desktop"><i class="fa fa-bars"></i></a>
-        </header>
-      {% block headerContent %}
-      {% endblock %}
+    <div class="inner site-inner">
+      <header>
+        {{ nav(page, {classes: 'hide-mobile'}) }}
+        <a href="#" class="off-canvas-trigger hide-desktop"><i class="fa fa-bars"></i></a>
+      </header>
     </div>
-  </div>
-  <div class="block header {% block upperClass %}{% endblock %}">
-    {% block headerBackground %}{% endblock %}
-
   </div>
 {% endblock %}
 

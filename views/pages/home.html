@@ -10,17 +10,6 @@
   <div class="block content">
     <div class="inner">
       <div class="site-pageheader">
-        {{ aposArea(page, 'homepageText', {
-          textOnly: true,
-          styles: [
-            { value: 'p', label: 'Text' },
-            { value: 'h3', label: 'Title' }
-          ]
-        }) }}
-      </div>
-    </div>
-    <div class="block content--bottom">
-      <div class="inner site-pageheader">
         {{ aposArea(page, 'main', {
           controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'slideshow', 'video'],
           styles: [
@@ -32,13 +21,16 @@
         }) }}
       </div>
     </div>
+    {# fullscreen background area #}
+  	{{ aposSingleton(page, 'background', 'slideshow') }}
   </div>
 
+  <!-- 
   <div class="block bg-gray block--5">
     <div class="inner">
       {{ aposSingleton(page, 'blogWidget', 'blog', { limit: 3 }) }}
     </div>
-  </div>
+  </div> 
 
   <div class="block content--bottom">
     <div class="inner site-pageheader">
@@ -52,5 +44,5 @@
         lockups: ['left', 'right']
       }) }}
     </div>
-  </div>
+  </div> -->
 {% endblock %}
